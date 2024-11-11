@@ -30,7 +30,7 @@
                     <span class="text-sm text-gray-500">- by {{ $post->author->name }}</span>
 
                     <div class="mt-2">
-                        <a href="{{ route('posts.edit', $post->id) }}" class="inline-block text-yellow-500 hover:underline">Edit</a>
+                        <a href="{{ route('posts.edit', $post->id) }}" class="inline-block text-yellow-400 hover:underline">Edit</a>
 
                         <form action="{{ route('posts.destroy', $post->id) }}" method="POST" style="display:inline;">
                             @csrf
